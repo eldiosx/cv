@@ -1,0 +1,28 @@
+#select {
+    display: flex;
+    justify-content: center;
+}
+
+.english {
+    width: 150px;
+    height: 150px;
+    padding: 100px;
+}
+
+.english:hover {
+    width: 250px;
+    height: 250px;
+    padding: 100px;
+}
+
+.spanish {
+    padding: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.spanish:hover {
+    padding: 100px;
+    width: 250px;
+    height: 250px;
+}
