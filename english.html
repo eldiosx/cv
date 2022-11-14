@@ -76,8 +76,10 @@
           <div class="row">
             <div class="col-md-6">
               <h2 class="h3 mb-3">About Me</h2>
-              <p>Hello! My name is Daniel. I am very versatile in the computer world, love both hardware and software. I am a
-                skilled Front-end/Back-end Developer and expert in almost any open source tool such as VS Code, LibreOffice, Gimp, Linux... I
+              <p>Hello! My name is Daniel. I am very versatile in the computer world, love both hardware and software. I
+                am a
+                skilled Front-end/Back-end Developer and expert in almost any open source tool such as VS Code,
+                LibreOffice, Gimp, Linux... I
                 have useful social skills to serve the client or even manage a local.</p>
             </div>
             <div class="col-md-5 offset-md-1">
@@ -93,7 +95,7 @@
                   <div class="pb-1">Age</div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">20</div>
+                  <div id="age" class="pb-1 text-secondary"></div>
                 </div>
                 <div class="col-sm-4">
                   <div class="pb-1">Email</div>
@@ -206,7 +208,8 @@
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">Junior Web Developer <span class="text-muted h6">at Indie Studio</span></div>
-                <div>I have worked on small web projects with very good performance. I know how to develop a complete web application.</div>
+                <div>I have worked on small web projects with very good performance. I know how to develop a complete
+                  web application.</div>
               </div>
             </div>
           </div>
@@ -343,6 +346,14 @@
   <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
   <script src="scripts/aos.js?ver=1.2.0"></script>
   <script src="scripts/main.js?ver=1.2.0"></script>
+  <script>
+    var date = new Date("2002-10-23");
+    var today = new Date();
+    var timeDiff = Math.abs(today.getTime() - date.getTime());
+    var age = Math.ceil(timeDiff / (1000 * 3600 * 24)) / 365;
+    var agefinal = age.toFixed();
+    document.getElementById("age").innerHTML = agefinal;
+  </script>
 </body>
 
 </html>
