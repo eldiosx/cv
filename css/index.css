@@ -1,3 +1,6 @@
+.title{
+    text-align: center;
+}
 #select {
     display: flex;
     justify-content: center;
