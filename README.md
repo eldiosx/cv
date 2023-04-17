@@ -8,4 +8,4 @@
 
 </div>
 
-## Live demo: [Preview](https://eldiosx.github.io/CV/)
+## Live demo: [Preview](https://eldiosx.github.io/cv/)
