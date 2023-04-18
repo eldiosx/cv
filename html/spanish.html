@@ -6,10 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Curriculum Vitae</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"></noscript>
   <link href="../css/font-awesome/css/all.css" rel="stylesheet">
   <link href="../css/bootstrap.css" rel="stylesheet">
   <link href="../css/aos.css" rel="stylesheet">
@@ -71,16 +67,24 @@
           <div class="row">
             <div class="col-md-6">
               <h2 class="h3 mb-3">Sobre mí</h2>
-              <p>¡Hola! Mi nombre es Daniel. Soy muy versátil en el mundo de la informática, me encanta tanto el
-                hardware como el software.
-                Desarrollo en front-end/back-end y se utilizar expertamente casi cualquier herramienta de código abierto
-                como VS Code, LibreOffice, Gimp, Linux...
-                Tengo habilidades sociales útiles para atender al cliente o incluso gestionar un local.</p>
+              <p>¡Hola! Mi nombre es Daniel. Soy muy versátil en el mundo de la informática y me encanta tanto el
+                hardware como el software. Soy un hábil desarrollador Front-end/Back-end y experto en casi cualquier
+                herramienta de código abierto, como VS Code, LibreOffice, Gimp y Linux. Además, poseo habilidades
+                sociales útiles para atender al cliente e incluso gestionar un equipo local.
+
+                Además de mis habilidades técnicas, también tengo habilidades sociales valiosas que me permiten servir a
+                los clientes de manera efectiva e incluso administrar equipos locales. Con mi fuerte ética de trabajo y
+                capacidad para adaptarme a nuevos desafíos, estoy seguro de que puedo hacer una contribución positiva a
+                cualquier organización.
+
+                Gracias por considerar mi solicitud. Espero con interés discutir mis calificaciones más detalladamente
+                contigo.</p>
             </div>
             <div class="col-md-5 offset-md-1">
+              <br><br>
               <div class="row mt-2">
                 <div class="col-sm-4">
-                  <div class="pb-1">CV inteligente</div>
+                  <div class="pb-1">Curriculum</div>
                 </div>
                 <div class="col-sm-8">
                   <div class="pb-1 text-secondary"><a
@@ -295,8 +299,7 @@
               <div class="mt-2">
                 <div>
                   <div class="mb-2">
-                    <div class="text-dark"><i
-                        class="fab fa-email mr-1"></i><span>no</span>
+                    <div class="text-dark"><i class="fab fa-email mr-1"></i><span>no</span>
                     </div>
                   </div>
                   <div class="mb-2">
@@ -347,12 +350,11 @@
   <script src="../js/aos.js?ver=1.2.0"></script>
   <script src="../js/main.js?ver=1.2.0"></script>
   <script>
-    var date = new Date("2002-10-23");
-    var today = new Date();
-    var timeDiff = Math.abs(today.getTime() - date.getTime());
-    var age = Math.ceil(timeDiff / (1000 * 3600 * 24)) / 365;
-    var agefinal = age.toFixed();
-    document.getElementById("age").innerHTML = agefinal;
+    const fechaActual = new Date();
+    const fechaNacimiento = new Date('2002-10-23');
+    const diferenciaTiempo = fechaActual.getTime() - fechaNacimiento.getTime();
+    const edad = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24 * 365));
+    document.getElementById("age").innerHTML = edad;
   </script>
 </body>
 
