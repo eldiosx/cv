@@ -50,9 +50,11 @@
     <div class="language-selector">
       <label for="language">Choose a language:</label>
       <select id="language">
-        <option value="es">&#x1F1EA;&#x1F1F8; Español</option>
         <option value="en">&#x1F1EC;&#x1F1E7; English</option>
+        <option value="es">&#x1F1EA;&#x1F1F8; Español</option>
         <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
+        <option value="de">&#x1F1E9;&#x1F1EA; Deutsch</option>
+        <option value="fi">&#x1F1EB;&#x1F1EE; Suomi</option>
       </select>
       <button type="button" onclick="changeLanguage()">GO</button>
     </div>
@@ -62,12 +64,16 @@
     function changeLanguage() {
       var select = document.getElementById("language");
       var selectedValue = select.options[select.selectedIndex].value;
-      if (selectedValue === "es") {
-        window.location.href = "html/es.html";
-      } else if (selectedValue === "en") {
+      if (selectedValue === "en") {
         window.location.href = "html/en.html";
+      } else if (selectedValue === "es") {
+        window.location.href = "html/es.html";
       } else if (selectedValue === "fr") {
         window.location.href = "html/fr.html";
+      } else if (selectedValue === "de") {
+        window.location.href = "html/de.html";
+      } else if (selectedValue === "fi") {
+        window.location.href = "html/fi.html";
       }
     }
   </script>
