@@ -2,20 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/index.css" rel="stylesheet">
-    <title>CV - Language</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector de Idioma</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .language-selector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .language-selector label {
+      margin-bottom: 10px;
+    }
+
+    .language-selector select {
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .language-selector button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    .flag-icon {
+      margin-right: 5px;
+    }
+  </style>
 </head>
 
 <body>
-    <br>
-    <h1 class="title">Choose a language:</h1>
-    <div id="select">
-        <a href="html/english.html"><img class="english" src="img/english.png" alt="english"></a>
-        <a href="html/spanish.html"><img class="spanish" src="img/spanish.png" alt="spanish"></a>
+  <div class="container">
+    <div class="language-selector">
+      <label for="language">Choose a language:</label>
+      <select id="language">
+        <option value="es">&#x1F1EA;&#x1F1F8; Español</option>
+        <option value="en">&#x1F1EC;&#x1F1E7; English</option>
+        <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
+      </select>
+      <button type="button" onclick="changeLanguage()">GO</button>
     </div>
+  </div>
+
+  <script>
+    function changeLanguage() {
+      var select = document.getElementById("language");
+      var selectedValue = select.options[select.selectedIndex].value;
+      if (selectedValue === "es") {
+        window.location.href = "html/es.html";
+      } else if (selectedValue === "en") {
+        window.location.href = "html/en.html";
+      } else if (selectedValue === "fr") {
+        window.location.href = "html/fr.html";
+      }
+    }
+  </script>
 </body>
 
 </html>
