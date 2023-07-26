@@ -30,6 +30,10 @@ body {
   outline: 0 !important;
 }
 
+.about-section{
+  text-align: justify;
+}
+
 hr {
   margin: 2rem 0;
   color: #adb5bd;
@@ -898,9 +902,7 @@ progress {
     width: 100%;
   }
 
-  .offset-md-1 {
-    margin-left: 8.33333%;
-  }
+
 
   .g-md-0,
   .gx-md-0 {
@@ -964,6 +966,11 @@ progress {
 }
 
 @media (min-width: 992px) {
+
+  .offset-md-1 {
+    margin-left: 8.33333%;
+  }
+
   .col-lg {
     flex: 1 0 0%;
   }
