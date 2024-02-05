@@ -4085,12 +4085,9 @@ footer a:not(.nav-link) {
 }
 
 @media (min-width: 48em) {
-  .site-title {
-    float: left;
-  }
 
   .site-nav {
-    float: right;
+    float: center;
   }
 
   .avatar {
